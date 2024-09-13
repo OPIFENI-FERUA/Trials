@@ -16,6 +16,9 @@ public class GradeEvaluator {
                 scanner.next();  
             }
         }
+         // Asking the user for input
+        System.out.print("Enter your marks: ");
+        int marks = scanner.nextInt();
         // Evaluating the marks according to the provided criteria
         if (marks >= 90 && marks <= 100) {
             System.out.println("Evaluation: Excellent");
