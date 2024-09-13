@@ -4,21 +4,19 @@ public class GradeEvaluator {
     public static void main(String[] args) {
       //Accept user input eliminating errors
         Scanner scanner = new Scanner(System.in);
-        int scan = 0;
+        int marks = 0;
 
         while (true) {
             System.out.println("Enter marks (numbers only):");
             if (scanner.hasNextInt()) {
-                scan = scanner.nextInt();
+                marks = scanner.nextInt();
                 break;  
             } else {
                 System.out.println("Invalid input! Please enter a number.");
                 scanner.next();  
             }
         }
-         // Asking the user for input
-        System.out.print("Enter your marks: ");
-        int marks = scanner.nextInt();
+         
         // Evaluating the marks according to the provided criteria
         if (marks >= 90 && marks <= 100) {
             System.out.println("Evaluation: Excellent");
